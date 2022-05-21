@@ -1,0 +1,39 @@
+.topic{
+    color: rgb(240, 231, 231);
+    font-style:bold;
+    position: absolute;
+    text-align: center;
+    top: 50px;
+    left: 43%;
+    top: 30%;
+    font-weight: 900;
+}
+.topic1{
+    color: rgb(240, 231, 231);
+    font-style:bold;
+    position: absolute;
+    text-align: center;
+    top: 40px;
+    left: 43%;
+    top: 40%;
+}
+.topic2{
+    color: rgb(240, 231, 231);
+    font-style:bold;
+    position: absolute;
+    text-align: center;
+    top: 50px;
+    left: 43%;
+    top: 50%;
+   left: 35%;
+} 
+a{color: rgb(240, 231, 231);
+    font-style:bold;
+    position: absolute;
+    text-align: center;
+    
+    left: 36%;
+    top: 60%;
+    font-weight: 900;
+
+}
