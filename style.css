@@ -1,3 +1,91 @@
+:root{
+    --pink:#ff00ee;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border:none;
+    list-style-type: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background: var(--pink);
+    color: rgb(11, 237, 237);
+}
+html {
+    font-size: 62.5%;
+    overflow: hidden;
+    scroll-padding-top:6rem;
+    scroll-behavior: smooth;
+}
+header {
+    position: fixed;
+    top:0;
+    left: 0; right: 0;
+    background:rgb(189, 250, 115);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    margin: 0;
+}
+header .logo{
+    font-size: 3rem;
+    font-weight:bold;
+}
+header .navbar a{
+    color:azure;
+    font-size: 2rem;
+    margin:0 .8rem;
+}
+header .navbar a:hover{
+    color: var(--pink);
+}
+header .icons i{
+    font-size: 2.5rem;
+    color: rgba(9, 44, 218, 0.559);
+    cursor: pointer;
+    margin-right: 2rem;
+}
+header .icons i:hover{
+    color:var(--pink);
+    
+}
+header .search-bar-container{
+    position:absolute;
+    top: 100%; left: 0; right: 0;
+    padding: 1.5rem 2rem;
+    background:rgb(176, 55, 55);
+    border-top: .1rem solid rgb(rgba(255, 0, 0, 0.103), rgb(126, 233, 126), rgb(34, 34, 210));
+    display: flex;
+    align-items: center;
+    z-index: 1001;
+    clip-path: polygon(0 0, 100% 0, 100% 0,0 0);
+}
+header .search-bar-container #search-bar{
+    width:100%;
+    padding: 1rem;
+    text-transform: none;
+    color:black;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+}
+header .search-bar-container label{
+    color: darkgray;
+    cursor: pointer;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+}
+header .search-bar-container label:hover{
+    color: rgb(239, 6, 239);
+}
 .topic{
     color: rgb(240, 231, 231);
     font-style:bold;
@@ -27,7 +115,7 @@
     top: 50%;
    left: 35%;
 } 
-a{color: rgb(240, 231, 231);
+.container a{color: rgb(240, 231, 231);
     font-style:bold;
     position: absolute;
     text-align: center;
@@ -35,5 +123,4 @@ a{color: rgb(240, 231, 231);
     left: 36%;
     top: 60%;
     font-weight: 900;
-
 }
