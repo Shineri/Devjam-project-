@@ -28,7 +28,7 @@ header {
     position: fixed;
     top:0;
     left: 0; right: 0;
-    background:rgb(189, 250, 115);
+    background:rgba(132, 236, 4, 0.84);
     z-index: 1000;
     display: flex;
     align-items: center;
