@@ -24,6 +24,10 @@ html {
     scroll-padding-top:6rem;
     scroll-behavior: smooth;
 }
+
+section{
+    padding:2rem 9%;
+}
 .btn{
     display: inline-block;
     margin-top: 1 rem;
@@ -42,7 +46,7 @@ header {
     position: fixed;
     top:0;
     left: 0; right: 0;
-    background:rgba(132, 236, 4, 0.84);
+    background:rgba(8, 39, 101, 0.84);
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -51,7 +55,7 @@ header {
     margin: 0;
 }
 header .logo{
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight:bold;
 }
 header .navbar a{
@@ -64,7 +68,7 @@ header .navbar a:hover{
 }
 header .icons i{
     font-size: 2.5rem;
-    color: rgba(9, 44, 218, 0.559);
+    color: rgb(253, 254, 255);
     cursor: pointer;
     margin-right: 2rem;
 }
@@ -178,4 +182,65 @@ border-color: var(--pink);
     font-size: 5rem;
     color:white;
     cursor: pointer;
+}
+
+
+
+
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+    min-height: 100vh;
+}
+.home .content{
+    text-align: center;
+}
+.home .content h3{
+    font-size:4.5rem;
+    color: rgb(1, 1, 1);
+    text-transform: uppercase;
+    text-shadow: 0 .3rem .5rem black;
+}
+.home .content p{
+    font-size:2.5rem;
+    color: rgb(1, 1, 1);
+   padding: 0.5rem 0;
+}
+
+.home .video-container video{
+    position: absolute ;
+top:0;left: 0;
+z-index: -1;
+height: 100%;
+width :100%;
+object-fit: cover;
+}
+
+.home .controls{
+    padding: 1rem;
+    border-radius: 5rem;
+    background: rgba(0, 0, 0,.7);
+    position: relative;
+    top: 10rem;
+}
+.home .controls .vid-btn{
+  height: 2rem;
+  width: 2rem;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: aliceblue;
+  cursor: pointer;
+  margin: 0 .5rem;
+}
+
+.home .controls .vid-btn.active{
+    background:var(--pink);
+}
+section{
+    padding: 2rem;
 }
