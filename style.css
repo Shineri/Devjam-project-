@@ -12,16 +12,20 @@
     list-style-type: none;
     text-decoration: none;
     transition: all .2s linear;
+    scroll-behavior: smooth;
+
 }
+
 
 *::selection{
     background: var(--pink);
     color: rgb(11, 237, 237);
 }
+
 html {
     font-size: 62.5%;
     overflow: hidden;
-    scroll-padding-top:6rem;
+    scroll-padding-top: 6rem;
     scroll-behavior: smooth;
 }
 
@@ -44,6 +48,24 @@ section{
 .heading span.space{
     background: none;
 }
+
+
+.head{
+    text-align: center;
+    padding: 2.5rem 0;;
+}
+.head span{
+    font-size: 4rem;
+    background: rgb(236, 23, 165);
+    color: rgb(20, 206, 230);
+    border-radius: 1rem;
+    padding: .2rem 1rem;
+    
+}
+.head span.space{
+    background: none;
+}
+
 .btn{
     display: inline-block;
     margin-top: 1 rem;
@@ -210,6 +232,15 @@ border-color: var(--pink);
     color:white;
     cursor: pointer;
 }
+.guide{
+    display: ;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0vh;
+    min-height: 100vh;
+}
 
 
 
@@ -249,16 +280,17 @@ object-fit: cover;
 }
 
 .home .controls{
-    padding: 1rem;
-    border-radius: 5rem;
+    padding: .8rem;
+    border-radius: 3rem;
     background: rgba(0, 0, 0,.7);
     position: relative;
     top: 10rem;
+    size: 5px;
 }
 .home .controls .vid-btn{
   height: 2rem;
   width: 2rem;
-  display: inline-block;
+  display:inline-block;
   border-radius: 50%;
   background-color: aliceblue;
   cursor: pointer;
@@ -267,6 +299,7 @@ object-fit: cover;
 
 .home .controls .vid-btn.active{
     background:var(--pink);
+    width: 20px;
 }
 section{
     padding: 2rem;
@@ -350,8 +383,8 @@ body{
         header .navbar{
             position: absolute;
             top:100%; right:0;  left:0;
-            background: rgba(97, 97, 228, 0.927);
-            border-top: .1rem solid white;
+            background: rgba(239, 181, 231, 0.742);
+            border-top: .1rem solid rgba(71, 165, 192, 0.89);
             padding:1rem 2rem;
             clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         }
@@ -363,7 +396,7 @@ body{
             border-radius: .5rem;
             padding:1.5rem;
             margin: 1.5rem 0;
-            background: coral;
+            background: rgb(139, 142, 234);
         }
     }
     @media(max-width:450px){
