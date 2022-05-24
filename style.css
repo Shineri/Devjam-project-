@@ -28,6 +28,22 @@ html {
 section{
     padding:2rem 9%;
 }
+.heading{
+    text-align: center;
+    padding: 2.5rem 0;
+
+}
+.heading span{
+    font-size: 3.5rem;
+    background: rgb(233, 198, 198);
+    color: rgb(210, 45, 45);
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+    
+}
+.heading span.space{
+    background: none;
+}
 .btn{
     display: inline-block;
     margin-top: 1 rem;
@@ -298,5 +314,8 @@ body{
     
         html{
             font-size: 50%;
-    
-        }
+    }
+    .heading span{
+        font-size: 2.5rem;
+    }
+    }
