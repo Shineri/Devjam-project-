@@ -163,9 +163,10 @@ body{
 .login-form-container{
     position: fixed;
     top: 120%;left: 0;
+    z-index: 10000;
     min-height: 100vh;
     width: 100%;
-    background:rgba(234, 109, 234, 0.765) ;
+    background:rgba(24, 124, 160, 0.769) ;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -177,7 +178,7 @@ body{
     margin: 2rem;
     padding: 1.5rem 2rem;
     border-radius: .5rem;
-    background: rgb(23, 21, 26);
+    background: rgb(201, 193, 214);
     width: 50rem;
 
 }
@@ -249,12 +250,12 @@ border-color: var(--pink);
     padding: 4rem;
 }
 .Guide .travel-box{
-    border: 2px ;
+    border: 4px solid rgb(108, 16, 16);
     padding:2rem;
     text-align: center;
     box-shadow: 0 1rem 2rem rgba(255, 0, 0, 0.103);
     background-color: rgb(175, 247, 223);
-    border-radius: .5rem;
+    border-radius: 4rem;
     
 }
 
@@ -265,11 +266,50 @@ border-color: var(--pink);
     object-fit: cover;
     margin-bottom: 1rem;
 }
-.Guide .travel-box  .list{
+.Guide .travel-box span{
    
-    align-content: center;
+    color:crimson
 }
 
+
+.Contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+}
+.Contact .row .image{
+    flex: 1 1 35rem;
+}
+.Contact .row .image img{
+    width:100%;
+}
+.Contact .row form{
+    flex: 1 1 50rem;
+    padding: 2rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0,.1);
+    border-radius: .5rem;
+}
+.Contact .row form .inputBox{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.Contact .row form .inputBox input, .Contact .row form textarea{
+    width: 49%;
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    background: #f7f7f7;
+    text-transform: none;
+}
+.Contact .row form textarea{
+    height: 15rem;
+    resize: none;
+    width: 100%;
+
+}
 
 
 
@@ -441,6 +481,9 @@ body{
     .heading span{
         font-size: 2.5rem;
     }
+    .Contact .row form .inputBox input{
+        width: 100%;
+    }
     }
 
 
@@ -495,6 +538,7 @@ body{
         height: 25rem;
         width: 100%;
         object-fit:cover;
+        border:2px solid black;
     }
 
     .packages .box-container .box .content{
@@ -528,7 +572,7 @@ body{
     }
 
     .footer{
-        background: #333;
+        background-image: url(HD-wallpaper-black-water-blue-dark-droplets-drops-rain-simple-wet-thumbnail.jpg);
     }
 
     .footer .box-container{
@@ -545,13 +589,13 @@ body{
     .footer .box-container .box h3{
         font-size: 2.5rem;
         padding: .7rem 0;
-        color: #fff;
+        color: rgb(47, 215, 108);
     }
 
     .footer .box-container .box p{
         font-size: 1.5rem;
         padding: .7rem 0;
-        color: #eee;
+        color: white;
     }
 
     .footer .box-container .box a{

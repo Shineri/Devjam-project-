@@ -9,7 +9,7 @@ let navbar= document.querySelector('.navbar');
 
 let videobtn=document.querySelectorAll('.vid-btn');
 
-window.onscroll=()=>{
+window.onscroll = () =>{
     searchbtn.classList.remove('fa-times');
     searchbar.classList.remove('active');
     menu.classList.remove('fa-times');
